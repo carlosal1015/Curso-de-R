@@ -1,0 +1,189 @@
+Primera clase 3 de febrero.
+
+Profesor: Edgard Cáceres.
+Pasos de instalación en Windows:
+
+1. Primero se instala en R nativo.
+2. Luego se instala R studio.
+3. Instalar Java de 64 bits.
+
+https://cran.r-project.org/mirrors.html
+https://www.rstudio.com/products/rstudio/
+https://www.java.com/es/download/manual.jsp
+
+La consola sirve para mostrar la acción.
+
+En el script se escriben las accciones y en la consola se ven las acciones.
+
+R es un lenguaje orientado a objetos.
+
+¿Qué es un objeto?
+
+Es una palabra o un símbolo al cuál se le asigna un valor.
+Un objeto puede ser un vector o matriz o marco de datos (data frame), listas.
+
+Hay que entender los objetos y sus propiedades.
+TS significa serie de tiempo, también es un objeto.
+
+Hay objetos como expresión donde se puede guardar las variables.
+
+Los corchetes indican la posición (no indica necesariamente el valor del dato) donde se visualiza.
+
+RStudio
+
+En el entorno de arriba derecha se mostrarán todos los objetos.
+
+Si creamos funciones, listas, dataframes, se guardarán esa ventana.
+
+En la ventana inferior derecha se verá la lista de todos los objetos.
+
+Rstudio se conecta con R nativo.
+
+Ctrl + l limpia la pantalla de consola.
+
+Para acceder al historial.
+
+A diferencia de otros programas como Microsoft Word, siempre es posible recuperar en la lista del
+historial de comandos de Rstudio.
+
+File es el explorador, no necesariamente es el archivo de trabajo. El plot es un objeto, es un dispositivo
+gráfico fuera del entorno de Rstudio.
+
+Paquetes
+
+Aquí viene la potencia de R. Se puede instalar nuevas librerías o paquetes.
+R es una comunidad abierta.
+R se puede utilizar para cualquier tipo de carreras. Ya supera los 10K de paquetes.
+Cada función debe estar documentada y debe tener un ejemplo, ayuda, base de datos.
+Todo debe estar documentado.
+
+Cada función tiene ejemplo y tiene su base de datos documentadas.
+
+Hay un mar de información.
+
+Hay dos formas de cargar librerías:
+
+Del CRAN o de manera manual.
+
+Si no hay internet se las descarga y luego se carga de manera manual.
+
+R es una comunidad.
+
+Para que funcione correctamente, instale la opción habilitada Install dependencies.
+
+Es posible que alguna librería ya no esté vigente, es necesario buscar la librería que lo reemplaza.
+
+Cuando sea instala no se carga la librería.
+
+Instala la librería y carga la librería.
+
+Es mejor que esté escrito la acción y no hacerlo manualmente.
+
+R hace distinción entre mayúscula y minúscula.
+
+Es importante digitarlo todo en minúscula.
+
+El marco de datos es un tipo especial de objetos.
+
+Se puede usar corchetes o $. Se entiende rápidamente.
+
+Llamado tipo matricial, espacio (todo)
+, separa filas y columnas.
+
+No depende tanto del nombre, sino de la matriz.
+
+Es un factor, al final aparece Levels: X Y.
+
+Factor se parece a un vector, pero puede guardar información como texto, pero dentro de R es un número.
+
+Hemos visto vector, dataframe y factor (coloca un mensaje en niveles.)
+
+En el objeto factor(1:3, labels=c("A", "B", "C")), el c después de label debe ser en minúscula.
+
+factor es un vector enriquecido o un vector con etiquetas.
+
+factor se utiliza más en un dataframe, las columnas, las variables, normalmente van a ser vectores o factores.
+
+Las columnas de un data frame, casi siempre son vectores o factor.
+
+Un data frame está compuesto de vectores o factores.
+
+La matriz es un arreglo numérico que puede contener números o texto.
+
+Si contiene texto y número todo es convertido a texto.
+
+El dataframe puede almacenar texto y número sin cambiar sus propiedades, la matriz si lo cambia.
+
+En cambio la matriz cambia sus tipos da datos al insertar texto y números.
+
+En un data frame, debe tener todas la misma cantidad de filas.
+
+En una matriz cuando no coincide el tamaño va a repetir la columna hasta completar, en cambio en el dataframe muestra el mensaje NA.
+
+La carga es por columnas, si se desea cargar por filas se ingresa el siguiente comando:
+
+Con matrix es muy fácil hacer un llamado, cuando llamamos a un elemento de un marco de datos puede salir como vector o factor, en cambio en el caso de la matriz siempre sale como vector.
+
+En una matriz reescribe los elementos que les falta.
+
+En un data frame no se muestra corchetas, cada fila se le llama casos.
+
+Un data frame nace de las historias médicas.
+
+Si no lleva [ e s un data frame.
+
+Cuando se hace el llamado columna por columna lo devuelve exactamente como era.
+
+Si se desea guardar texto y número es preferible usar un data frame, en cambio, si se va a trabajar con número o texto es preferible usar una matriz.
+
+Una lista puede guardar cualquier tipo de objeto.
+
+Incluso puede contener a otra lista.
+
+Una lista usualmente contiene dataframe, matriz, vector, factor, lista.
+
+Las listas se utilizan cuando se usan funciones.
+
+Una lista es el objeto que usa R para expulsar salidas de funciones muy complejas.
+
+Incluso uno de esas salidas puede ser un gráfica.
+
+El hecho de hacer cambios tiende a modificar los elementos.
+
+Nos gustaría que no se modifica el objeto en el proceso.
+
+En el ejemplo A es un vector y B es un factor.
+
+Podeos imprimir algún elemento del vector con x[[1]][1] por ejemplo.
+
+El código no se altera si le damos ENTER después de una coma ,. Pero no es cierto cuando va entre comillas.
+
+Sirve para analizar series de tiempo.
+
+R está dirigido a series de tiempos.
+
+Serie de tiempo no es una variable. Se explicará después.
+
+Se puede aplicar un percentil a una serie de tiempo. Debe existir orden o una mediana.
+
+R es general para muchas disciplinas.
+
+Para la parte matemática se puede usar el comando expression().
+
+Para 0 está reservado el falso, para lo demás será verdadero.
+
+Si fuera matriz iría los corchetes en los encabezados.
+
+El comando mode nos dice de qué tipo es el objeto vector, por ejemplo numeric or character.
+
+Normalmente cada clase va a ser evaluada, la tercera clase habría una evaluación y también una evaluación final.
+
+Los gráficos son sencillos y se deben programar.
+
+Recomendación: Leer el libro.
+
+Cada dispositivo gráfico lo explica parámetro a parámetro, superposición de gráficos.
+
+Java de 64 bits, R nativo, borren y actualicen los permisos. Usen de 64 bits.
+
+Codificación al latin1 
