@@ -1,7 +1,0 @@
-# Primer ejemplo:
-# Un comentario sirve para guiar de qué se trata el script. Sirve para orientar.
-# Creando un objeto X. Para asignar se puede usar el igual o menor y menos.
-x <- 1:50
-x
-# Vamos a pulsar las teclas ctrl + A, seleccionar todo.
-# ctrl + R, ejecutar
