@@ -1,4 +1,4 @@
-Se puede usar corchetes o $. Se entiende r�pidamente.
+Se puede usar corchetes o $. Se entiende rápidamente.
 
 Llamado tipo matricial, espacio (todo)
 , separa filas y columnas.
