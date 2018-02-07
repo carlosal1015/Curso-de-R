@@ -40,7 +40,7 @@ M1
 M2 <- matrix(1:36,6,6,byrow=TRUE)
 M2
 
-# Todo se convierte a texto, puesto que A es una letra y lo dem�s es n�mero, predomina texto.
+# Todo se convierte a texto, puesto que A es una letra y lo demás es número, predomina texto.
 
 v <- c(1:35,"A")
 v
@@ -59,7 +59,7 @@ x<-data.frame(v1,v2,v3); x
 x$v1
 x[,2]
 # El data frame se carga por columnas.
-# En la l�nea 40 se ejecutan dos acciones.
+# En la línea 40 se ejecutan dos acciones.
 
 # Creando una lista
 z<-c(3,2,8,9)
@@ -86,7 +86,7 @@ ts(1:47, frequency = 12,
 ts(1:47, frequency = 12,
    start = c(1959,3)) # empieza en marzo
 
-# Creando el objeto expresi�n
+# Creando el objeto expresión
 
 exp1<- expression(x/(y+exp(z)))
 exp1
@@ -95,12 +95,12 @@ y<-3
 z<-5
 eval(exp1)
 
-# Conversi�n en R (qu� son los archivos ocultos en R)
+# Conversión en R (qué son los archivos ocultos en R)
 
 x<-c(TRUE,TRUE,FALSE);x #no lleva comillado
 as.numeric(x)
 
-x<-c("1","3","4") #cuando se use doble comillado ser� texto.
+x<-c("1","3","4") #cuando se use doble comillado será texto.
 as.numeric(x)
 
 x<-c("A","B","C")
