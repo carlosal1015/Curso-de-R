@@ -7,7 +7,8 @@ Profesor: Lic. [Edgar Luis Cáceres Angulo](mailto:prof.edgarcaceres@gmail.com).
 Sábados: 09:00 hrs - 13:00 hrs.
 Aula: Laboratorio N°2.
 Duración: 24 horas.
-Contenido:
+
+## Contenido:
 
 - Objetos y operaciones básicas.
 - Listas, dataframes, vectores, matrices, conjuntos de datos y factores.
@@ -17,7 +18,7 @@ Contenido:
 - Gráficas principales
 - Parámetros gráficos
 
-Aplicaciones:
+### Aplicaciones:
 
 - Análisis de Regresión lineal
 - Pruebas no paramétricas
