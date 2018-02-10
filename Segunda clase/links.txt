@@ -1,0 +1,9 @@
+Desintalar la versión anterior de Java
+
+https://www.rstudio.com/products/rstudio/download/#download
+
+https://java.com/en/download/faq/java_win64bit.xml#Java for 64-bit
+
+https://cloud.r-project.org/
+
+https://stackoverflow.com/questions/18803354/ending-prompt-in-r
