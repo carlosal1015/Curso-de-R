@@ -7,3 +7,8 @@ https://java.com/en/download/faq/java_win64bit.xml#Java for 64-bit
 https://cloud.r-project.org/
 
 https://stackoverflow.com/questions/18803354/ending-prompt-in-r
+
+https://www.r-statistics.com/2013/03/updating-r-from-r-on-windows-using-the-installr-package/
+
+https://stackoverflow.com/questions/4131338/is-it-possible-to-have-a-multi-line-comments-in-r
+

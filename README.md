@@ -1,4 +1,4 @@
-# Curso de R Studio con aplicaciones en regresión lineal y pruebas no paramétricas
+# Curso de [R Studio](https://www.rstudio.com/) con aplicaciones en regresión lineal y pruebas no paramétricas
 
 Profesor: Lic. [Edgar Luis Cáceres Angulo](mailto:prof.edgarcaceres@gmail.com).
 
