@@ -1,0 +1,13 @@
+\documentclass[preview]{standalone}
+\usepackage{graphicx,caption,float}
+\usepackage[T1]{fontenc}
+\usepackage[usefilenames,% Important for XeLaTeX
+DefaultFeatures={Ligatures=Common}]{plex-otf} %
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\begin{document}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=0.5\textheight]{ihaka.jpg}
+		\caption*{\bfseries\itshape Ihaka}
+	\end{figure}
+\end{document}
