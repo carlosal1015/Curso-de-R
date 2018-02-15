@@ -1,0 +1,13 @@
+\documentclass[preview,border={0pt 0pt 0pt 0pt}]{standalone}
+\usepackage{graphicx,caption,float}
+\usepackage[T1]{fontenc}
+\usepackage[usefilenames,% Important for XeLaTeX
+DefaultFeatures={Ligatures=Common}]{plex-otf} %
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\begin{document}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=0.4\textheight]{gentleman.jpg}
+		\caption*{\bfseries\itshape Robert Gentleman, estadístico y uno de los creadores del lenguaje R}
+	\end{figure}
+\end{document}
