@@ -1,4 +1,4 @@
-# ejemplo2.R
+# exercise1_2.R
 #
 # Copyright © 2018 Oromion <caznaranl@uni.pe>
 #
