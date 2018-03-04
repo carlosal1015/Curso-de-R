@@ -1,4 +1,4 @@
-Desintalar la versi�n anterior de Java
+Desintalar la versión anterior de Java
 
 https://www.rstudio.com/products/rstudio/download/#download
 
