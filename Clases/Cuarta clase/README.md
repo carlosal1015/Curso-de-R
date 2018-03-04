@@ -133,3 +133,10 @@ R commander genera el código y te lo envía a Rstudio.
 Modificar xyplot por plot.
 
 Cómo crear y almacenar imágenes y 
+
+```R
+ip <- as.data.frame(installed.packages()[,c(1,3:4)])
+rown>
+rownames(ip) <- NULL
+ip <- ip[is.na(ip$Priority),1:2,drop=FALSE]> print(ip,row.names=FALSE)
+```
