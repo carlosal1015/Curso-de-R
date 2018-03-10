@@ -1,0 +1,156 @@
+---
+title: "Pruebas no paramétricas"
+output: html_notebook
+---
+
+Este es un [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+x <- 0:7
+f <- c(35,99,104,110,62,25,10,3)
+lambda <- sum(x*f)/sum(f)
+esp <- dpois(x, lambda)
+tba <- chisq.test(obs, p=esp, rescale.p = T)
+tba # Pedimos los resultados de la variable
+tba$obs
+tba$exp
+tba$res
+```
+
+*Ctrl+Shift+K* 
+
+Hay pruebas que trabajan con varias muestras, en el caso del dado o en el caso del rugby, nos piden saber si es una distribución de Poisson, utilizaremos la prueba de Kolmogorov para probar la normalidad, puede probar cualquier distribución, puede probar si es $\gamma$ u otra distribución.
+
+Distribución Uniforme se parece a una línea recta.
+Distribución normal se parece a la campana de Gauss.
+
+```{r}
+# Valor semilla
+set.seed(100) # Se puede usar cualquier número interno. En nuestro ejemplo es 100.
+
+# Datos
+x <- rnorm(50)
+y <- runif(30)
+
+hist(x)
+hist(y)
+
+# Prueba
+ks.test(x,y) # Prueba de Kolmogorov Smirnov.
+```
+Si p-valor es menor que $\alpha$, entonces se rechaza la hipotesis nula.
+El conjunto de datos primero no es igual conjunto de datos segundos.
+
+# Prueba de normalidad (para una muestra)
+
+```{r}
+# Valor semilla
+set.seed(100)
+
+# Datos
+x <- rnorm(50)
+
+# Prueba
+ks.test(x, pnorm, mean(x), sd(x))
+```
+
+El p-valor no es menor que $\alpha$, no se puede rechazar la hipótesis nula. Se concluye que los datos siguen una distribución normal. El $H_0$.
+
+Siempre podremos llegar al p-valor, pero es importante su interpretación.
+
+## ¿Los datos seguirán una distribución $\gamma$?
+
+```{r}
+# Valor semilla
+set.seed(100)
+
+# Datos
+x <- rnorm(50)
+
+# Prueba normalidad
+
+
+# Prueba gamma
+
+ks.test(x, pgamma, mean(x), sd(x))
+```
+
+¿Por qué los datos se ajustan a más de una distribución?
+
+¿Cómo elegir la "mejor"?
+
+Si tengo pocos datos, puedo simular muchos datos, con el Método de MonteCarlo.
+
+Siempre cuando hay dudas, primero se realiza un análisis exploratorio, por ejemplo: histogramas, diagrama de cajas, rangos, etc. Un análisis gráficos.
+
+Principio de Parsimonia de los modelos, el modelo más sencillo, también se conoce como navaja de Ockam.
+
+Si mi modelo fuera $\gamma$ no se prefiere usar regresión lineal.
+
+Otros métodos, bondada de ajusta, alkaite, modelo bayesiano. Hay varias salidas.
+
+El test Shapiro-Wilk se usa para muestras menor a 50, muestras pequeñas, en áreas como biología. Para probar la normalidad es complicada.
+
+```{r}
+shapiro.test(x)
+```
+Para tamaño de muestra adecuado.
+
+Como no se rechaza, x realmente sigue una distribución normal.
+
+# Muestras independientes vs muestras relacionadas
+
+Las mediciones son sobre la misma muestra o la misma poblacional (muestra relacional).
+
+Si las muestras son de dos objetos completamente diferentes, serían muestras independientes.
+
+
+Examen con 3 notas
+Muestra o población: todo el salón
+Son las mismas personas evaluadas en diferentes periodos del tiempo.
+
+# Test de McNemar
+
+En R no es fácil etiquetar una tabla
+
+```{r}
+tabla <- matrix(c(63, 21, 4, 2), byrow = TRUE, nrow = 2, ncol = 2); tabla
+
+colnames(tabla) <- c("Diestro", "Surdo")
+rownames(tabla) <- c("Hombre", "Mujer")
+names(dimnames(tabla)) <- c("Género", "DZ")
+
+tabla
+```
+
+Solo hay dos variables (genero, dz) y cada variable tiene sus categorías.
+
+```{r}
+mc <- mcnemar.test(table, correct = FALSE)
+```
+
+Se rechaza la hipótesis nula. Por lo tanto, los tiempos son diferentes.
+
+No siempre es una data, esta vez requirió una tabla de doble entrada para realizar la prueba de Mc-Nemar.
+
+
+Si es una muestra, será una sola variable, la mediana es de frecuencia central, solo es válida cuando puede establecer un tipo de orden, al menos de tipo ordinal.
+
+```{r}
+library(BSDA)
+# Prueba del signo para 1 muestra
+x1<-c(1.5,2.2,0.9,1.3,2.0,1.6,1.8,1.5,2.0,1.2,1.7)
+BSDA::SIGN.test(x1, md = 1.8, alternative = "two.sided", conf.level =0.95)
+```
+
+Como no se rechaza la hipótesis nula, entonces se acepta que la mediana está entre los parámetro
+La hipótesis es igual a 1.8. Nos interesa saber la hipótesis nula y no la hipótesis alterna.
+
+# Caso para dos muestras relacionadas
+
+El valor estimado  es la mediana 1.6 es de la muestra, la **mediana 1.8 es la medida de la población**.
+La conclusión que hemos hecho es a nivel poblacional, toda prueba de hipótesis apunta a la población, no apunta a la muestra.
+
+Nunca tuvimos la población, pero estamos concluyendo para la población, estamos infiriendo. El valor 1.8 es un supuesto. Un ejemplo es de un inventario del año pasado, o del ciclo pasado, sino usar una muestra piloto. Sino usar referencias bibliográficas.
