@@ -88,3 +88,101 @@ library(BSDA)
 # Prueba del signo para 1 muestra
 x1<-c(1.5,2.2,0.9,1.3,2.0,1.6,1.8,1.5,2.0,1.2,1.7)
 BSDA::SIGN.test(x1, md = 1.8, alternative = "two.sided", conf.level =0.95)
+
+library(BSDA)
+#Prueba del signo para 2 muestras relacionadas
+cin<-c(4.2,4.7,6.6,7.0,6.7,4.5,5.7,6.0)
+rad<-c(4.1,4.9,6.2,6.9,6.8,4.4,5.7,5.8)
+SIGN.test(cin,rad, md = 0, alternative = "two.sided", conf.level = 0.95)
+
+
+
+
+x <- c(0.80, 0.83, 1.89, 1.04, 1.45, 1.38, 1.91, 1.64, 0.73,1.46)
+y <- c(1.15, 0.88, 0.90, 0.74, 1.21)
+
+wilcox.test(x, y, alternative = "t")
+# Pueden provenir de la misma población
+
+wilcox.test(x, y, alternative = "l")
+# Hipótesis:
+# $H_0\colon x=<y$
+# $H_!\colonx>y$
+# p-value: 0.8968
+# entonces x>=y
+
+wilcox.test(x, y, alternative = "g")
+# Hipótesis:
+# $H_0\colon x=<y$
+# $H_!\colonx>y$
+# p-value= 0.1272
+# entonces x<=y
+Una hipótesis puede plantearse de tres maneras diferentes, unilaterales, bilaterales.
+
+
+library(RVAideMemoire)
+# prueba de Cochran 
+res<-c(1,1,1,1,1,1,0,1,0,1,1,0,0,0,0,1,1,1,1,1,1,1,1,0,
+       0,0,1,0,1,0,1,1,1,1,1,1)
+sportsman=gl(3,1,36,labels=LETTERS[1:3])
+game<-gl(12,3,labels=letters[1:12])
+mat<-cbind(res,sportsman,game)
+mat
+cochran.qtest(res~sportsman|game)
+doble factor, variable de bloqueo.
+
+Como no es menor que alpha, no se rechaza la hipótesis nula. (No hay diferencia en las proporciones, hay igualdad en las proporciones). En realidad los grupos son iguales al menos en la variable en que se examina.
+
+Peso vs notas (varones oD mujeres)
+
+Prueba de suma de rango de Friedmann
+# Pueden ser valores entero.
+
+
+Toda prueba estadística está sujeto a condiciones. Las paramétricas son más robustas y surgieron después.
+Lo no paramétrico no necesita ser normalizado. Todas las herramientas estadísitcas tienen condiciones, sino los resultados no serán válidos.
+
+library(Rcmdr)
+
+# Clic en editar conjunto de datos
+# Estad{istica}, no paramétrico, suma de , la creo Fisher.
+
+
+data<-iris
+local({
+  .Responses <- na.omit(with(iris, cbind(Petal.Length, Petal.Width, 
+                                         Sepal.Length, Sepal.Width)))
+  cat("\nMedians:\n") 
+  print(apply(.Responses, 2, median)) 
+  friedman.test(.Responses)
+})
+
+
+Podemos usar la base de datos para segmentar las especies como grupos y aplicar la prueba de Kruskal - Wallis.
+
+
+with(iris, tapply(Petal.Length, Species, median, na.rm=TRUE))
+kruskal.test(Petal.Length ~ Species, data=iris)
+
+Se rechaza la hipótesis nula, por lo tanto para esa variable longitud del pétalo. Son poblaciones diferentes.
+
+Hemos visto chi cuadrado para bondad de ajuste, también independecia de asociacion, distribuciopn, homogeneidad.
+
+
+Variable dicotómica (fuma/no fuma; ausencia/presencia).
+
+Cuando tenemos variables dicotomicas donde se aplioca chi cuadrado menor a 50 valores, se debe de apliocar la pruena de yates.
+
+
+visión <- matrix(c(442,514,38,6), nrow = 2, byrow = T); visión
+dimnames(visión) <- list(c("normal", "daltónico"), c("Masculino", "Femenino")); visión
+
+chisq.test(visión, correct = F)  # Sin correción
+
+chisq.test(visión, correct = T) # Con correción.
+
+Se rechaza la hipotesis nula, entonces son asocidads las variables.
+
+
+independintes hiposteis nula
+asisciadas hipotesis alterna
