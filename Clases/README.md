@@ -1,3 +1,5 @@
+## [UUn breve repaso de la historia del entorno de programación estadístico R](https://nbviewer.jupyter.org/github/carlosal1015/Curso-de-R-Studio/blob/master/notebooks/index.ipynb)
+
 ## Clases programadas
 
 - [Primera clase -- 03/02/2018](https://nbviewer.jupyter.org/github/carlosal1015/Curso-de-R-Studio/blob/master/notebooks/Primera%20clase.ipynb)
