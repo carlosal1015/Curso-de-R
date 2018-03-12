@@ -12,4 +12,4 @@
 
 - [Quinta clase -- 10/03/2018](https://nbviewer.jupyter.org/github/carlosal1015/Curso-de-R-Studio/blob/master/notebooks/Quinta%20clase.ipynb)
 
-- [Sexta clase -- 17/03/2018](https://nbviewer.jupyter.org/github/carlosal1015/Curso-de-R-Studio/blob/master/notebooks/Sexta%20clase.ipynb)
+- [Sexta clase -- 24/03/2018](https://nbviewer.jupyter.org/github/carlosal1015/Curso-de-R-Studio/blob/master/notebooks/Sexta%20clase.ipynb)
