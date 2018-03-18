@@ -43,5 +43,3 @@ fig3 <- plot(bd1, type="s", main="Tìtulo principal", xlab="titulo x", ylab="tit
 library(Rcmdr)
 
 par(mfrow = c(2,2))
-
-
