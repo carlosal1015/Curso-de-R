@@ -15,6 +15,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-setwd("C:/Users/Usuario.Usuariopc.002/Desktop/Tercera clase")
-bd1 <- read.table("basedatos.txt", header = TRUE)
-bd1
+# En la pestaña Session, escoger Choose Directory y escoger su ruta.
+setwd("~/Desktop/Repositorios/Curso-de-R-Studio/Clases/Tercera clase")
+bd1 <- read.table("basedatos1.txt", header = TRUE); bd1

@@ -15,18 +15,24 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+# TODO funcion que valide el proceso de instalar y cargar.
+
+setwd("~/Desktop/Repositorios/Curso-de-R-Studio/Clases/Cuarta clase")
 install.packages("JGR")
 install.packages("Deducer")
 install.packages("XLConnect")
 install.packages("DeducerExtras")
 
+# No es necesario incluir comillas al usar library
+
 library(JGR)
 library(Deducer)
 library(XLConnect)
 library(DeducerExtras)
+
 JGR()
-# No es necesario incluir comillas al usar library
-bd <- readWorksheet(loadWorkbook('C:/Users/LAB 1/Desktop/RClase/Libro1.xlsx'),sheet=1)
+
+bd <- readWorksheet(loadWorkbook('~/Desktop/Repositorios/Curso-de-R-Studio/Clases/Cuarta clase/Libro1.xlsx'),sheet=1)
 ggplot() +
   geom_bar(aes(y = ..count..,x = as.factor(FREC)),data=bd,colour = '#ff0000',fill = '#ff9900',alpha = 0.5)
 
@@ -43,5 +49,3 @@ fig3 <- plot(bd1, type="s", main="Tìtulo principal", xlab="titulo x", ylab="tit
 library(Rcmdr)
 
 par(mfrow = c(2,2))
-
-

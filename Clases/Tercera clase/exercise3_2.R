@@ -15,8 +15,8 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-setwd("C:/Users/Usuario.Usuariopc.002/Desktop/Tercera clase")
-bd2 <- read.table("basedatos2.txt", header = TRUE, sep = ";") # El orden a veces puede importar.
-bd2
-# Es un marco de datos, porque no aparace corchetes.
-dim(bd2)
+setwd("~/Desktop/Repositorios/Curso-de-R-Studio/Clases/Tercera clase")
+bd2 <- read.table("basedatos2.txt", header = TRUE, sep = ";"); bd2
+# El orden dentro de la función read.table a veces puede importar.
+# Es un marco de datos, porque no aparece corchetes.
+dim(bd2) # La dimensión de b2.

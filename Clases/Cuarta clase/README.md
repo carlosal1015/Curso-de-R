@@ -1,30 +1,4 @@
-# Cuarta clase
-
-## Gráficos
-
-Es una librería importante. Tiene un alto soporte. La idea es realizar gráficos de manera sencilla. 
-
-En jaguar se instala ggplot2 en ambas librerias. Se usa para gráficos y análisis estadístico con RStudio.
-
-Paquetes y datas -> administrador de paquetes.
-
 % Jaguar necesita de JavaGD
-
-- ggplot2
-- plyr
-- Deducer y DeducerExtras(Se abre una tercera consola)
-- Los dos XLCOnnect deben estar activados.
-- Installa DeducerExtras
-
-Las dos opciones activadas.
-
-Filtrar archivos con Tipo de Archivo al abrir.
-
-La ventaja de usar Jaguar es que le entraga código.
-
-Aprender a usar el código y reutilizar el código.
-
-bd
 
 Vamos a Plot -> Plot Builder
 

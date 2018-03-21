@@ -15,11 +15,11 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-setwd("C:/Users/Usuario.Usuariopc.002/Desktop/Tercera clase")
+setwd("~/Desktop/Repositorios/Curso-de-R-Studio/Clases/Tercera clase")
 bd5 <- read.table("basedatos5.txt",
                   header = TRUE,
                   sep = ";",
                   dec = ",",
                   colClasses = c("numeric","character"))#Interesante
 bd5
-# Puede leer sav de spss, txt, xls, stat, de access, puede hacer conexiónh a base da datos como las de Oracle
+# Puede leer sav de spss, txt, xls, stat, de access, puede hacer conexión a base da datos como las de Oracle.

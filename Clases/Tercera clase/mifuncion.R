@@ -4,3 +4,4 @@ mifuncion <- function(basedatos, vector, n){
   consulta <- subset(basedatos, vector>n)
   return(consulta)
 }
+# TODO Aprender a documentar funciones en R.

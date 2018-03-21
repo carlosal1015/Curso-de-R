@@ -15,12 +15,12 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-setwd("C:/Users/Usuario.Usuariopc.002/Desktop/Tercera clase")
+setwd("~/Desktop/Repositorios/Curso-de-R-Studio/Clases/Tercera clase")
 bd4 <- read.table("basedatos4.txt",
                   header = TRUE,
                   sep = ";",
                   dec = ",")
 bd4
-# En R los decimales son con . 
+# En R los decimales se digitan con . (punto).
 # Dentro de R no puyede haber n{umero con ,, sería texto.}
 # Después de cada coma, podemos dar enter

@@ -15,6 +15,5 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-setwd("C:/Users/Usuario.Usuariopc.002/Desktop/Tercera clase")
-bd3 <- read.table("basedatos3.txt", header = TRUE, sep = ";", dec = ".")
-bd3
+setwd("~/Desktop/Repositorios/Curso-de-R-Studio/Clases/Tercera clase")
+bd3 <- read.table("basedatos3.txt", header = TRUE, sep = ";", dec = "."); bd3
