@@ -1,23 +1,3 @@
-% Jaguar necesita de JavaGD
-
-Vamos a Plot -> Plot Builder
-
-ggplot2 fue creado por RStudio
-
-Clic en bar y arrastrar hasta Components
-
-Arrastramos FREC hasta la cajita.
-
-Te va ayudar a aprender,
-
-Dale clic en OK.
-
-Cada cambio en la gráfica es un código.
-
-Clic en editar diálogo.
-
-Hay que tener cuidado, no todas las opciones están disponibles para los gráficos.
-
 No todas van a funcionar si se desconoce su uso, activaremos el borde y fondo, fill and background. El alpha es el nivel de transparencia de la fuente de imagen
 
 x, color, fill, alpha. Y le damos clic en OK.

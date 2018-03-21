@@ -96,4 +96,10 @@ fig3 <- plot(bd1, type="s", main="Tìtulo principal", xlab="titulo x", ylab="tit
 library(Rcmdr)
 
 par(mfrow = c(2,2))
->>>>>>> 054874c2ca9d8d03dc59c87a03216ba39ae629af
+
+
+# library(tcltk)
+# tt <- tktoplevel()
+# label.widget <- tklabel(tt, text = "Hello, World!")
+# button.widget <- tkbutton(tt, text = "Push",command = function()cat("OW!\n"))
+# tkpack(label.widget, button.widget)
