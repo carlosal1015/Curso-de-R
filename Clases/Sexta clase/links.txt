@@ -1,0 +1,6 @@
+http://wpd.ugr.es/~bioestad/guia-de-r/practica-3/
+https://es.wikipedia.org/wiki/Prueba_F_de_Fisher
+https://en.wikipedia.org/wiki/Null_hypothesis
+http://sphweb.bumc.bu.edu/otlt/MPH-Modules/BS/R/R5_Correlation-Regression/R5_Correlation-Regression7.html
+https://www.datacamp.com/community/tutorials/r-tutorial-read-excel-into-r
+http://analisisydecision.es/trucos-r-de-string-a-dataframe-de-palabras/
