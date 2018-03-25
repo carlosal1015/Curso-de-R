@@ -1,0 +1,1 @@
+pokemon <- read.csv("~/Desktop/Repositorios/Curso-de-R-Studio/Clases/Cuarta clase/pokemon.csv"); pokemon

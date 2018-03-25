@@ -21,20 +21,23 @@ bdiris <- bdiris[,c(1,2)]
 
 layout(matrix(c(1,2,3,4, 5, 5), 3, 2, byrow = T))
 MAT <- matrix(c(1, 2, 3, 4,5, 5), 3, 2, byrow = T)
-layout(MAT)#Recibe una matriz y el dispositivo gr{afico lo partticiona como la matriz}. Cuando los n{umerops se repiten se crean un solo grafico de ese tipo.
-#layout.show me muestra la cantidad de graficos.
+layout(MAT)#  Recibe una matriz y el dispositivo gráfico lo particiona como la matriz. Cuando los númerops se repiten se crean un solo grafico de ese tipo.
+
+# layout.show me muestra las posiciones relativas de cada gráfico.
 
 layout.show(5)
 plot(bdiris)
 plot(bdiris)
 plot(bdiris)
-plot(bdiris, "blue")
+plot(bdiris, col="blue")
 plot(bdiris, col="red")
 
-1, 2, 3, 4, 5, 5
-##
-1 2
-3 4
-5 5 #Se unen los gr'aficos.
+# Si la secuencia es 1, 2, 3, 4, 5, 5.
+# Se creará una matriz así
 
-# Crear un grafico y los alrededores crear otros graficos
+# 1 2
+# 3 4
+# 5 5
+
+# Notamos que se unen los gráficos.
+# TODO Crear un gráfico y los alrededores crear otros gráficos.
