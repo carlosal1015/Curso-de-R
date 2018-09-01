@@ -1,6 +1,9 @@
-Curso Taller de Software R
+Curso Taller Software R
 ===
-Instituto Nacional de Estadística e Informática (ENEI)
+**Lugar**: [Escuela Nacional de Estadística e Informática (ENEI)](https://www.inei.gob.pe/enei/)
 
+**Profesora:** Estadística. Patricia Elizabeth Vásquez Sotero.
 
-Horario: Sábado, Domingo: 14:00--16:00
+**Inicio:** :calendar: 01/09/2018 -- 23/09/2018.
+
+**Horario:** Sábado, Domingo: 14:00--18:00 horas.
