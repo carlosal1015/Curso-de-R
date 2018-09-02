@@ -1,0 +1,46 @@
+demo()
+citation()
+2+2
+# Escribiremos aquí
+2+2
+# y a continuación pulsamos Ctrl+R o desde el ícono Correr línea o seleccionar
+3+4
+log({(3+2)*5}+6)
+v <-c(2,1,3,4)
+v <-c(2,1,3,4); v
+w<-c(0,2,-2,1);w[3]
+log({(3+2)*5}+6)
+log({(3+2)*5}+6)
+log({(3+2)*5}+6)
+# Equivale a log({(3+2)*5}+6) o log({{3+2}*5}+6)
+v <-c(2,1,3,4)
+v
+# nos muestra el valor de dicho vector
+w<-c(0,2,-2,1)
+#crea un vector llamado w
+w[3]
+# noa muestra la tercera componente de w
+2*v-3*w+2
+2*v-3*w+2
+# multiplica componente a componente
+w/v
+# divide componente a componente
+v^3
+# eleva al cubo cada componente
+v^w
+# eleva cada componente de v a su correspondiente componente de w
+sqrt(w)
+sqrt(w)
+w
+vw<- c(v,w)
+# une los dos vectores y los almacena en uno nuevo vw
+vw
+# muestra el resultado de vw
+vwa <- c(vw,6)
+# une otra componente
+vwa/v
+# da un warning pues ambos vectores no tienen el mismo número de componentes. Pero, qué hace?
+vwa
+v
+save.image("F:\\Clase_de_R\\myworkspace")
+? ls
