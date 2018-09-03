@@ -1,0 +1,10 @@
+id	nombre	edad	sexo	puntaje
+01	Esteban	30	1	80
+02	Alicia	28	2	78
+03	Helena	25	2	85
+04	Juan	27	1	86
+05	Jose	32	1	75
+06	Carlos	26	1	80
+07	María	25	2	85
+08	Darcy	27	2	88
+
