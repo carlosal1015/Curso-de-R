@@ -1,0 +1,51 @@
+H_0: Existe independencia entre V190REC y V103REC
+H1: No Existe independencia entre V190REC y V103REC
+
+$\alpha:$ 0.05 (en caso de ser desconocida)
+$\xi$ cuadrado es asimetrica y positiva.
+cuadrados que se distribuyen de una normal estándar.
+
+Región de rechazo
+
+Cómo se determina los grados de libertad si tengo 2
+Se determina por el número de categoías
+
+5 categorias >>> 5-1 = 4
+
+2 categorias >>> 2-1 = 1
+
+4*1= 4 grados de libertad
+
+
+Los alpha son conocidas de la tabla
+
+$p$ valor es la probabilidad
+
+El xicuadrado 27 es la probabilidad dejada a la derecha y caería en la región de
+
+No están relacionadas, existe evidencia estadistica de que la estadistica de que las variables están relacionadas con un nivel de significancia, si varia el nuvel socieconomico en la niñez
+
+cuanto varias_ es otro paso
+
+habria que hallar el coeficiente de correlacion
+
+la idea de la prueba de independencia para variables cualitativas
+
+El paquete da de los dos (doble) y en caso de haber desigualdad en H_0 habrá que dividir el p-valor y comparar con el alpha
+
+Se representan en una tabla de contingencia.
+Toda tabla de contingencia debe llevar una interpretacion si las varaciacon de las variables es significativa
+
+La pruebe de independeica nos lo dirá
+
+Cuando es inferior a 5 nos calcula otra prueba
+
+Hay otra formula para las frecuencias esperadas y estas frecuencias son mayor que 5
+
+Si no usaremos el Test de Fischer
+
+De 3 categorias pasan a ser 5
+
+Estadistica de prueba, grados de libertad y el numero de los datos, No solova si se rechaza o no, se debe llegar como en la diapositiva 54
+
+Convertr las variables cualitiativas a factores

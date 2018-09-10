@@ -1,0 +1,31 @@
+
+data(iris)
+encuesta1 <- readSPSS("F:/Clase_de_R_4/Enctran.sav", rownames=FALSE, stringsAsFactors=TRUE, tolower=FALSE)
+library(abind, pos=17)
+local({
+  .Table <- xtabs(~CURSO+VEHICULO, data=encuesta1)
+  cat("\nFrequency table:\n")
+  print(.Table)
+  .Test <- chisq.test(.Table, correct=FALSE)
+  print(.Test)
+})
+local({
+  .Table <- xtabs(~CURSO+VEHICULO, data=encuesta1)
+  cat("\nFrequency table:\n")
+  print(.Table)
+  cat("\nRow percentages:\n")
+  print(rowPercents(.Table))
+  .Test <- chisq.test(.Table, correct=FALSE)
+  print(.Test)
+})
+editDataset(encuesta1)
+local({
+  .Table <- xtabs(~CURSO+VEHICULO, data=encuesta1)
+  cat("\nFrequency table:\n")
+  print(.Table)
+  cat("\nRow percentages:\n")
+  print(rowPercents(.Table))
+  .Test <- chisq.test(.Table, correct=FALSE)
+  print(.Test)
+})
+

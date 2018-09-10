@@ -1,0 +1,85 @@
+
+> data(iris)
+
+> encuesta1 <- readSPSS("F:/Clase_de_R_4/Enctran.sav", rownames=FALSE, stringsAsFactors=TRUE, tolower=FALSE)
+
+> library(abind, pos=17)
+
+> local({
++   .Table <- xtabs(~CURSO+VEHICULO, data=encuesta1)
++   cat("\nFrequency table:\n")
++   print(.Table)
++   .Test <- chisq.test(.Table, correct=FALSE)
++   print(.Test)
++ })
+
+Frequency table:
+         VEHICULO
+CURSO     No Sí
+  primero 39 21
+  segundo 36 18
+
+	Pearson's Chi-squared test
+
+data:  .Table
+X-squared = 0.035077, df = 1, p-value = 0.8514
+
+
+> local({
++   .Table <- xtabs(~CURSO+VEHICULO, data=encuesta1)
++   cat("\nFrequency table:\n")
++   print(.Table)
++   cat("\nRow percentages:\n")
++   print(rowPercents(.Table))
++   .Test <- chisq.test(.Table, correct=FALSE)
++   print(.Test)
++ })
+
+Frequency table:
+         VEHICULO
+CURSO     No Sí
+  primero 39 21
+  segundo 36 18
+
+Row percentages:
+         VEHICULO
+CURSO       No   Sí Total Count
+  primero 65.0 35.0   100    60
+  segundo 66.7 33.3   100    54
+
+	Pearson's Chi-squared test
+
+data:  .Table
+X-squared = 0.035077, df = 1, p-value = 0.8514
+
+
+> editDataset(encuesta1)
+
+> local({
++   .Table <- xtabs(~CURSO+VEHICULO, data=encuesta1)
++   cat("\nFrequency table:\n")
++   print(.Table)
++   cat("\nRow percentages:\n")
++   print(rowPercents(.Table))
++   .Test <- chisq.test(.Table, correct=FALSE)
++   print(.Test)
++ })
+
+Frequency table:
+         VEHICULO
+CURSO     No Sí
+  primero 39 21
+  segundo 36 18
+
+Row percentages:
+         VEHICULO
+CURSO       No   Sí Total Count
+  primero 65.0 35.0   100    60
+  segundo 66.7 33.3   100    54
+
+	Pearson's Chi-squared test
+
+data:  .Table
+X-squared = 0.035077, df = 1, p-value = 0.8514
+
+
