@@ -1,0 +1,76 @@
+\documentclass{article}
+%\documentclass[draft,a4paper,twoside,onecolumn,romanappendices]{IEEEtran}
+
+\begin{document}
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc} %CUando uno descargue el PDF sea posible 
+%\usepackage[spanish]{babel}
+%\spanishdatedel %para el "del" de la fecha
+%\usepackage{amsmath}
+%\usepackage[cmintegrals]{newtxmath}
+%\usepackage{bm}
+%\usepackage{lipsum} %para usar Lorem Ipsum
+%\usepackage{graphicx}%[demo]
+
+\title{An randomized algorithm to calculate the median}
+%\author{Oromion\\Miller Silva\\Erwin\\Jesús Jáuregui}%\thanks{}
+%\providecommand{\crai}{Biblioteca Central de la UNI}
+%\providecommand{\FC}{\sffamily\textit{Facultad de Ciencias}}
+%\renewcommand{\spanishabstractname}{\textbf\centering Mis resúmenes}
+\SweaveOpts{concordance=TRUE}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+En este artículo presentaremos \ldots ...
+\end{abstract}
+
+%\begin{IEEEkeywords}
+%Álgebra lineal, Matemática discreta, teoría algebraica de números.
+%\end{IEEEkeywords}
+
+%\section{Introducción}
+
+%\lipsum[1-2]
+
+%\subsection{Historia}
+
+%\lipsum[2-4]
+
+%\subsubsection{Lo que ocurrió en el año 1950}
+
+%\lipsum[2-6]
+
+%\paragraph{Un párrafo}
+
+%\section{Nueva sección}
+
+%\subsection{Segunda subsección}
+
+%\[
+%I=\int\!f(x)\,\mathrm{d}
+%\]
+
+%\begin{equation}
+%\label{eqn_example1}
+%x = \sum\limits_{i=0}^{z} 2^{i}Q
+%\end{equation}
+
+%\begin{equation*}
+%\label{eqn_example}
+%x = \sum\limits_{i=0}^{z} 2^{i}Q
+%\end{equation*}
+
+%\begin{equation}
+%\label{eqn_example2}
+%x = \sum\limits_{i=0}^{z} 2^{i}Q
+%\end{equation}
+
+%De la ecuación \eqref{eqn_example1}
+
+%\begin{figure}
+%\includegraphics{tex}%\caption{figure title}
+%\end{figure}
+
+\end{document}

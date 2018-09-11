@@ -1,0 +1,9 @@
+\documentclass{IEEEtran}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+ABC
+
+
+\end{document}
