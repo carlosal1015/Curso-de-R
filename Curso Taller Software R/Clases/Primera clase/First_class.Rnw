@@ -1,0 +1,42 @@
+% !Rnw weave = knitr
+% !TeX program = XeLaTeX
+\documentclass[10pt,a4paper]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-sloppy]{babel}
+\usepackage{amsmath,amsthm,bm}
+\usepackage[cmintegrals]{newtxmath}
+\usepackage{graphicx}
+
+\theoremstyle{definition}
+\newtheorem{remark}{Observación}
+
+\title{Rnoweb: Literate Programming with and for R}
+\author{Oromion\thanks{Escuela Nacional de Estadística e Informática (ENEI)}}
+
+\renewcommand\IEEEkeywordsname{Palabras clave}
+
+\begin{document}
+%\SweaveOpts{concordance=TRUE}
+% https://www.stat.auckland.ac.nz/~ihaka/software/Rnoweb/Rnoweb-guide.pdf
+\maketitle
+
+\begin{abstract}
+Resumen de la primera clase.
+\end{abstract}
+
+\begin{IEEEkeywords}
+knitr, R, ENEI.
+\end{IEEEkeywords}
+
+\section{Estadística vs Matemática}
+
+\section{Resumen}
+\subsection{Diferencia entre investigación básica y aplicada}
+
+\begin{remark}
+Generar nuevo conocimento vs comprobar teorías científicas
+\end{remark}
+
+Si existe una versión anterior de R, este se debe desinstalar.
+
+\end{document}
