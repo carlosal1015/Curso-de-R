@@ -1,20 +1,20 @@
-# Esta es la ventana del editor, si elegimos en ventanas y dividir pantalla, el editor aparecerá en la parte superior.
+# Esta es la ventana del editor, si elegimos en ventanas y dividir pantalla, el editor aparecerÃ¡ en la parte superior.
 # La consola sirve para ejecutar un comando.
 # demo() # Aparecen los paquetes de R
 # glm es el modelo lineal generalizado que se usa en modelos no lineales.
-# Se usa para variable dependenties, dicotómicas para caulitativs.
-# lm es el método de estimación, máximo verosimilitud.
-# método de mínimos cuadrados y el método de máxima verosimilitud, buscar sus supuestos.
-# nlm es para regresión no lineal, smooth quizá se use para series de tiempo
-# El lenguaje de programación está en C y Fortran.
-# Escribiremos aquí
+# Se usa para variable dependenties, dicotÃ³micas para caulitativs.
+# lm es el mÃ©todo de estimaciÃ³n, mÃ¡ximo verosimilitud.
+# mÃ©todo de mÃ­nimos cuadrados y el mÃ©todo de mÃ¡xima verosimilitud, buscar sus supuestos.
+# nlm es para regresiÃ³n no lineal, smooth quiz? se use para series de tiempo
+# El lenguaje de programaciÃ³n estÃ¡ en C y Fortran.
+# Escribiremos aqu?
 2+2
-# y a continuación pulsamos Ctrl+R o desde el ícono Correr línea o seleccionar
+# y a continuaciÃ³n pulsamos Ctrl+R o desde el Ã­cono Correr l?nea o seleccionar
 # Si es una solo comando podemos usar la consola, pero si es una rutina de trabajo podemos usar el editor.
-# Más adelante veremos arreglos y matrices.
-# Al final debe terminar en paréntesis porque es una función, no debe acabar en llaves.
+# M?s adelante veremos arreglos y matrices.
+# Al final debe terminar en par?ntesis porque es una funci?n, no debe acabar en llaves.
 
-log({(3+2)*5}+6)
+log( { (3 + 2) * 5 } + 6 )
 # Equivale a log({(3+2)*5}+6) o log({{3+2}*5}+6)
 v <-c(2,1,3,4)
 v
@@ -42,7 +42,7 @@ vw
 vwa <- c(vw,6)
 # une otra componente
 vwa/v
-# da un warning pues ambos vectores no tienen el mismo número de componentes. Pero, qué hace?
+# da un warning pues ambos vectores no tienen el mismo n?mero de componentes. Pero, qu? hace?
 # vuelve a repetir nuevamente
 # du, ado stata
 # Lenguaje a orientado a objetos y la lectura de datos
