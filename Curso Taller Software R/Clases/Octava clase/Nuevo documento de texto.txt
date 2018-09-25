@@ -1,0 +1,6 @@
+homocedasticidad , varianza constante
+en vez de usar kolmogorov, el de shapiro es de normalidad
+los residuos deben ser normales
+leverage significa apalancamiento
+
+Pasar al analisis confiirmatori
